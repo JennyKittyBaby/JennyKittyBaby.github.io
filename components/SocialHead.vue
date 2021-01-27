@@ -57,7 +57,7 @@ export default {
         {
           hid: 'twitter:image:alt',
           name: 'twitter:image:alt',
-          content: this.image,
+          content: this.imageAlt,
         },
         {
           hid: 'og:title',
@@ -82,7 +82,7 @@ export default {
         {
           hid: 'og:image:alt',
           property: 'og:image:alt',
-          content: this.title,
+          content: this.imageAlt,
         },
         {
           hid: 'twitter:creator',
