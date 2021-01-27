@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-96 rounded-xl bg-white px-4 py-2 flex mt-4 relative link-box cursor-pointer hover:bg-pink-50 transition-all duration-200"
+    class="w-full sm:w-96 rounded-xl bg-white px-4 py-2 flex mt-4 relative link-box cursor-pointer hover:bg-pink-50 transition-all duration-200"
     @click="onClick"
     @click.middle="onClick"
   >
@@ -18,13 +18,13 @@
       />
     </div>
     <div class="flex flex-col ml-3 justify-center">
-      <span class="font-bold leading-7 title transition-all duration-300">{{
+      <span class="font-bold leading-2 title transition-all duration-300">{{
         title
       }}</span>
       <span class="text-xs font-light">{{ subtitle }}</span>
       <a
         ref="link"
-        class="font-light text-blue-600 link transition-all duration-300"
+        class="font-light text-blue-600 link transition-all duration-300 break-all"
         :href="href"
         target="_blank"
         rel="noopener"

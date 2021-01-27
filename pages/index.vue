@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8">
+  <div class="mb-8 px-2 md:px-0 w-full">
     <SocialHead
       title="JennyKittyBaby"
       description="Genderfluid amateuer porn person"
@@ -24,8 +24,8 @@
         />
       </picture>
     </div>
-    <div class="container">
-      <div class="flex -mt-24 justify-center">
+    <div class="w-full">
+      <div class="flex -mt-12 sm:-mt-16 md:-mt-24 justify-center">
         <picture>
           <source
             :srcset="img.profile.webp.srcSet"
@@ -38,7 +38,7 @@
             type="image/jpeg"
           />
           <img
-            class="inline-block h-48 w-48 rounded-full ring-4 ring-white object-cover shadow-lg"
+            class="inline-block h-24 w-24 sm:h-32 sm:w-32 md:h-48 md:w-48 rounded-full ring-4 ring-white object-cover shadow-lg"
             :src="img.profile.jpg.src"
             sizes="192px"
             alt="Portrait picture of Jenny Kitty Baby"
@@ -47,9 +47,11 @@
           />
         </picture>
       </div>
-      <div class="grid justify-items-center flex-col">
-        <h1 class="font-display mt-2 pt-8 text-3xl">JennyKittyBaby</h1>
-        <p class="max-w-lg text-center mt-8 font-light">
+      <div class="grid justify-items-center flex-col w-full">
+        <h1 class="font-display mt-2 pt-8 text-xl sm:text-2xl md:text-3xl">
+          JennyKittyBaby
+        </h1>
+        <p class="max-w-full md:max-w-lg text-center mt-8 font-light">
           Hi I'm Jenny, genderfluid (she/it/he) amateuer porn person.
           <br />
           Say hi or support me on the websites below :3
@@ -69,7 +71,7 @@
           icon="~assets/icons/twitter.svg"
           icon-alt="Twitter Logo"
         />
-        <p class="max-w-sm text-center mt-4 mb-2 font-light">
+        <p class="max-w-full md:max-w-lg text-center mt-4 mb-2 font-light">
           I also have accounts on these sites, mostly as a precaution in case
           Twitter purges NSFW content.
         </p>
