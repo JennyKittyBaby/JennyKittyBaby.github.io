@@ -8,6 +8,19 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
+    link: [
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap&text=JennyKittyBaby',
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -34,7 +47,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://google-fonts.nuxtjs.org/options
-    '@nuxtjs/google-fonts',
+    // '@nuxtjs/google-fonts',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -48,12 +61,12 @@ export default {
   telemetry: false,
 
   // https://google-fonts.nuxtjs.org/options
-  googleFonts: {
-    families: {
-      'Hachi Maru Pop': true,
-    },
-    display: 'swap',
-  },
+  // googleFonts: {
+  // families: {
+  //   'Hachi Maru Pop': true,
+  // },
+  // display: 'swap',
+  // },
 
   // https://github.com/juliomrqz/nuxt-optimized-images
   optimizedImages: {

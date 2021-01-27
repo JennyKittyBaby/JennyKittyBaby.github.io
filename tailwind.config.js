@@ -32,6 +32,7 @@ module.exports = {
         '100v': '100vh',
       }),
       fontFamily: (_theme) => ({
+        sans: ['Open Sans', 'Arial', 'sans-serif'],
         display: ['Hachi Maru Pop', 'cursive'],
       }),
     },
