@@ -17,7 +17,17 @@ export default {
     },
     image: {
       type: String,
-      default: require('~/assets/social.jpg'),
+      default:
+        'https://jennykittybaby.netlify.app' + require('~/assets/social.jpg'),
+    },
+    imageAlt: {
+      type: String,
+      default:
+        'Banner image showing pink thigh highs, a BunnyHopps diaper, kitty ears, a pink chastity cage and a magic wand.',
+    },
+    twitterAt: {
+      type: String,
+      default: '@JennyKittyBaby',
     },
   },
 
@@ -35,6 +45,11 @@ export default {
           content: this.description,
         },
         {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
           hid: 'twitter:image',
           name: 'twitter:image',
           content: this.image,
@@ -42,7 +57,7 @@ export default {
         {
           hid: 'twitter:image:alt',
           name: 'twitter:image:alt',
-          content: this.title,
+          content: this.image,
         },
         {
           hid: 'og:title',
@@ -68,6 +83,11 @@ export default {
           hid: 'og:image:alt',
           property: 'og:image:alt',
           content: this.title,
+        },
+        {
+          hid: 'twitter:creator',
+          property: 'twitter:creator',
+          content: this.twitterAt,
         },
       ],
     }
