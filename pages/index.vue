@@ -59,7 +59,7 @@
         <Link
           class="mt-8"
           title="💖 Become a fan 💖"
-          subtitle="$5/month or less to access all my content! :3"
+          subtitle="$5/month to access all my content! :3"
           href="https://justfor.fans/JennyKittyBaby"
           icon="~assets/icons/jff.jpg"
           icon-alt="Just For Fans Logo"
@@ -70,6 +70,18 @@
           href="https://twitter.com/JennyKittyBaby"
           icon="~assets/icons/twitter.svg"
           icon-alt="Twitter Logo"
+        />
+        <Link
+          title="Fetlife"
+          href="https://fetlife.com/users/12739819"
+          icon="~assets/icons/fetlife.svg"
+          icon-alt="Fetlife Logo"
+        />
+        <Link
+          title="Reddit"
+          href="https://www.reddit.com/user/JennyKittyBaby"
+          icon="~assets/icons/reddit.svg"
+          icon-alt="Reddit Logo"
         />
         <p class="max-w-full md:max-w-lg text-center mt-4 mb-2 font-light">
           I also have accounts on these sites, mostly as a precaution in case
