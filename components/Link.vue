@@ -28,6 +28,8 @@
         :href="href"
         target="_blank"
         rel="noopener"
+        @click.stop
+        @click.middle.stop
       >
         {{ cleanHref }}
       </a>
