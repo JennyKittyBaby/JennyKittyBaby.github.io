@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="180.000000pt"
+   height="180.000000pt"
+   viewBox="0 0 180.000000 180.000000"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg98"
+   sodipodi:docname="curiouscat.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)">
+  <defs
+     id="defs102" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1916"
+     inkscape:window-height="1034"
+     id="namedview100"
+     showgrid="false"
+     inkscape:zoom="1.5416667"
+     inkscape:cx="120"
+     inkscape:cy="120"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg98" />
+  <metadata
+     id="metadata92">
+Created by potrace 1.10, written by Peter Selinger 2001-2011
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     transform="matrix(0.18930189,0,0,-0.18930189,-80.584111,260.85289)"
+     fill="#de7c00"
+     stroke="none"
+     id="g96">
+    <path
+       d="m 530,1290 c -20,-37 -29,-158 -17,-228 6,-37 9,-119 8,-182 -2,-97 1,-125 18,-171 12,-31 31,-65 44,-77 12,-11 77,-46 145,-77 116,-54 127,-57 185,-53 44,3 85,15 142,41 169,78 168,77 200,142 28,57 30,67 32,190 1,72 5,171 8,220 8,103 -7,203 -32,212 -26,10 -84,-27 -161,-104 l -73,-72 -34,15 c -46,19 -148,18 -187,-2 l -30,-16 -44,50 c -45,51 -155,132 -180,132 -7,0 -18,-9 -24,-20 z"
+       id="path94" />
+  </g>
+</svg>

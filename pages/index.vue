@@ -72,6 +72,12 @@
           icon-alt="Twitter Logo"
         />
         <Link
+          title="Ask me stuff!"
+          href="https://curiouscat.qa/JennyKittyBaby"
+          icon="~assets/icons/curiouscat.svg"
+          icon-alt="Curious Cat Logo"
+        />
+        <Link
           title="Fetlife"
           href="https://fetlife.com/users/12739819"
           icon="~assets/icons/fetlife.svg"
