@@ -73,18 +73,21 @@
         />
         <Link
           title="Ask me stuff!"
+          subtitle="Ask pretty much anything, just don't be rude"
           href="https://curiouscat.qa/JennyKittyBaby"
           icon="~assets/icons/curiouscat.svg"
           icon-alt="Curious Cat Logo"
         />
         <Link
           title="Fetlife"
+          subtitle="No idea how to use it! :P"
           href="https://fetlife.com/users/12739819"
           icon="~assets/icons/fetlife.svg"
           icon-alt="Fetlife Logo"
         />
         <Link
           title="Reddit"
+          subtitle="Please bug me to post more here xD"
           href="https://www.reddit.com/user/JennyKittyBaby"
           icon="~assets/icons/reddit.svg"
           icon-alt="Reddit Logo"
