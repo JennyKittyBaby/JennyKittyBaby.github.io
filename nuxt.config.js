@@ -8,6 +8,12 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
+    meta: [
+      {
+        name: 'google-site-verification',
+        content: 'HgTckfBmRMjUPIoAqLl1zyrWRjqx4jPlXXBudnnOy8g',
+      },
+    ],
     link: [
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       {
