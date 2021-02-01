@@ -2,6 +2,14 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // Modern: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modern/
+  modern: 'client',
+
+  // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-global-name
+  globals: {
+    id: 'jenny',
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'JennyKittyBaby',
@@ -61,6 +69,20 @@ export default {
     extend(_config, { loaders: { vue } }) {
       vue.transformAssetUrls.Link = ['icon']
     },
+    indicator: false,
+    splitChunks: {
+      layouts: false,
+      pages: true,
+      commons: false,
+    },
+  },
+
+  // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-loading
+  loading: false,
+
+  // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-generate
+  generate: {
+    fallback: true,
   },
 
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-telemetry/
