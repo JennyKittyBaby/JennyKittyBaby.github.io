@@ -4,8 +4,8 @@
       title="JennyKittyBaby"
       description="Genderfluid amateuer porn person"
     />
-    <div class="w-full shadow-lg">
-      <picture>
+    <div class="w-full shadow-lg overflow-hidden flex">
+      <picture class="w-full h-20v">
         <source
           :srcset="img.banner.webp.srcSet"
           type="image/webp"
@@ -17,12 +17,22 @@
           type="image/jpeg"
         />
         <img
-          class="object-cover h-20v w-full"
+          ref="banner"
+          class="object-cover w-full h-20v"
           :src="img.banner.jpg.src"
           sizes="100vw"
           alt="Banner image showing pink thigh highs, a BunnyHopps diaper, kitty ears, a pink chastity cage and a magic wand."
+          @load="img.banner.loaded = true"
         />
       </picture>
+      <img
+        :class="
+          'object-cover h-20v w-full' + (img.banner.loaded ? ' fade-slow' : '')
+        "
+        :src="img.banner.placeholder"
+        aria-hidden
+        style="margin-left: -100%"
+      />
     </div>
     <div class="w-full">
       <div class="flex -mt-12 sm:-mt-16 md:-mt-24 justify-center">
@@ -38,14 +48,24 @@
             type="image/jpeg"
           />
           <img
-            class="inline-block h-24 w-24 sm:h-32 sm:w-32 md:h-48 md:w-48 rounded-full ring-4 ring-white object-cover shadow-lg"
+            ref="profile"
+            :class="profileClasses"
             :src="img.profile.jpg.src"
             sizes="192px"
             alt="Portrait picture of Jenny Kitty Baby"
             width="192"
             height="192"
+            @load="img.profile.loaded = true"
           />
         </picture>
+        <img
+          :class="profileClasses + (img.profile.loaded ? ' fade-fast' : '')"
+          :src="img.profile.placeholder"
+          aria-hidden
+          width="192"
+          height="192"
+          style="margin-left: -192px"
+        />
       </div>
       <div class="grid justify-items-center flex-col w-full">
         <h1 class="font-display mt-2 pt-8 text-xl sm:text-2xl md:text-3xl">
@@ -129,23 +149,40 @@ const img = {
   banner: {
     webp: require('~/assets/banner.jpg?resize&sizes[]=600&sizes[]=1000&sizes[]=1200&sizes[]=1400&sizes[]=1600&sizes[]=1800&sizes[]=2000&sizes[]=2500&sizes[]=3000&format=webp'),
     jpg: require('~/assets/banner.jpg?resize&sizes[]=600&sizes[]=1000&sizes[]=1200&sizes[]=1400&sizes[]=1600&sizes[]=1800&sizes[]=2000&sizes[]=2500&sizes[]=3000&format=jpg'),
+    placeholder: require('~/assets/banner.jpg?lqip'),
+    loaded: false,
   },
   profile: {
     webp: require('~/assets/profile.jpg?resize&sizes[]=100&sizes[]=250&sizes[]=500&sizes[]=750&sizes[]=1000&format=webp'),
     jpg: require('~/assets/profile.jpg?resize&sizes[]=100&sizes[]=250&sizes[]=500&sizes[]=750&sizes[]=1000&format=jpg'),
+    placeholder: require('~/assets/profile.jpg?lqip'),
+    loaded: false,
   },
 }
 
 @Component
 export default class Index extends Vue {
   img = img
+
+  profileClasses =
+    'inline-block h-24 w-24 sm:h-32 sm:w-32 md:h-48 md:w-48 rounded-full ring-4 ring-white object-cover shadow-lg relative'
 }
 </script>
 
 <style>
-.banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('~@/assets/banner.jpg');
-  background-position: 0% 70%;
+.fade-slow {
+  animation: 1s ease-in 0s 1 forwards fade;
+}
+.fade-fast {
+  animation: 0.2s ease-in 0s 1 forwards fade;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 </style>

@@ -8,7 +8,7 @@ module.exports = {
       './nuxt.config.{js,ts}',
     ],
     options: {
-      keyframes: true,
+      keyframes: false,
     },
   },
   darkMode: false, // or 'media' or 'class'
