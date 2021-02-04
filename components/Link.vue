@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full sm:w-96 rounded-xl bg-white px-4 py-2 flex mt-4 relative link-box cursor-pointer hover:bg-pink-50 transition-all duration-200"
+    class="w-full sm:w-112 rounded-xl bg-white px-4 py-2 flex mt-4 relative link-box cursor-pointer hover:bg-pink-50 transition-all duration-200"
     @click="onClick"
     @click.middle="onClick"
   >

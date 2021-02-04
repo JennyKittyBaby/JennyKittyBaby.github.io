@@ -79,6 +79,13 @@
           icon-alt="Curious Cat Logo"
         />
         <Link
+          title="Buy me stuff :3"
+          subtitle="Note: Amazon US even tho I'm in Denmark"
+          href="https://www.amazon.com/hz/wishlist/ls/3L878J496FC21"
+          icon="~assets/icons/amazon.png"
+          icon-alt="Amazon Wishlists Icon"
+        />
+        <Link
           title="Fetlife"
           subtitle="No idea how to use it! :P"
           href="https://fetlife.com/users/12739819"

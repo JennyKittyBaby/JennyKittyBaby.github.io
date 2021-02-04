@@ -40,6 +40,9 @@ module.exports = {
         sans: ['Open Sans', 'Arial', 'sans-serif'],
         display: ['Hachi Maru Pop', 'cursive'],
       }),
+      spacing: {
+        112: '28rem',
+      },
     },
   },
   variants: {
