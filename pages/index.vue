@@ -30,7 +30,8 @@
           'object-cover h-20v w-full' + (img.banner.loaded ? ' fade-slow' : '')
         "
         :src="img.banner.placeholder"
-        aria-hidden
+        aria-hidden="true"
+        alt=""
         style="margin-left: -100%"
       />
     </div>
@@ -61,7 +62,8 @@
         <img
           :class="profileClasses + (img.profile.loaded ? ' fade-fast' : '')"
           :src="img.profile.placeholder"
-          aria-hidden
+          aria-hidden="true"
+          alt=""
           width="192"
           height="192"
           style="margin-left: -192px"
