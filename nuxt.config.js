@@ -67,7 +67,6 @@ export default {
       {
         matomoUrl: '//stats.jennykittybaby.com/',
         siteId: 1,
-        consentRequired: true,
         debug: true,
         verbose: true,
         cookies: false,
