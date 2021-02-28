@@ -62,6 +62,17 @@ export default {
   modules: [
     // https://google-fonts.nuxtjs.org/options
     // '@nuxtjs/google-fonts',
+    [
+      'nuxt-matomo',
+      {
+        matomoUrl: '//stats.jennykittybaby.com/',
+        siteId: 1,
+        consentRequired: true,
+        debug: true,
+        verbose: true,
+        cookies: false,
+      },
+    ],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
