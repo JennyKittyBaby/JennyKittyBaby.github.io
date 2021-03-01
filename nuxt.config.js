@@ -41,7 +41,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-matomo.js', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -62,16 +62,6 @@ export default {
   modules: [
     // https://google-fonts.nuxtjs.org/options
     // '@nuxtjs/google-fonts',
-    [
-      'nuxt-matomo',
-      {
-        matomoUrl: '//stats.jennykittybaby.com/',
-        siteId: 1,
-        debug: true,
-        verbose: true,
-        cookies: false,
-      },
-    ],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

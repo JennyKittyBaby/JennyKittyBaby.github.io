@@ -28,8 +28,8 @@
         :href="href"
         target="_blank"
         rel="noopener"
-        @click.stop="trackClick"
-        @click.middle.stop="trackClick"
+        @click.stop
+        @click.middle.stop
       >
         {{ cleanHref }}
       </a>
@@ -69,15 +69,6 @@ export default class Link extends Vue {
     if (noTextSelected) {
       ;(this.$refs.link as HTMLAnchorElement).click()
     }
-  }
-
-  trackClick(e: MouseEvent) {
-    e.stopPropagation()
-
-    const target = e.target as HTMLAnchorElement
-
-    // @ts-ignore
-    this.$matomo.trackLink(target.href, 'link')
   }
 }
 </script>
