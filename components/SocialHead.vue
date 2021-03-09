@@ -17,7 +17,7 @@ export default {
     },
     image: {
       type: String,
-      default: 'https://jennykittybaby.com/' + require('~/assets/social.jpg'),
+      default: 'https://jennykittybaby.com' + require('~/assets/social.jpg'),
     },
     imageAlt: {
       type: String,
