@@ -13,6 +13,6 @@ export default ({ app }) => {
 
     preInitActions: [['setRequestMethod', 'POST']],
 
-    debug: true,
+    debug: false,
   })
 }
