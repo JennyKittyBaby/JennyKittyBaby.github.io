@@ -87,12 +87,20 @@
           icon-alt="Just For Fans Logo"
         />
         <Link
+          title="Jennys~"
+          subtitle="Small discord server for my friends and fans :3"
+          href="https://discord.gg/FaH6N59VqQ"
+          icon="~assets/icons/discord.svg"
+          icon-alt="Discord Logo"
+        />
+        <Link
           title="Best place to contact me"
           subtitle="...and just generally where I'm most active"
           href="https://twitter.com/JennyKittyBaby"
           icon="~assets/icons/twitter.svg"
           icon-alt="Twitter Logo"
         />
+
         <Link
           title="Ask me stuff!"
           subtitle="Ask pretty much anything, just don't be rude"
